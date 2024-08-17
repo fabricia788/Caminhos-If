@@ -1,5 +1,7 @@
-<h1>{{disciplinaCarregada.nome}} - Instituto Federal</h1>
+<h1>{{disciplinaCarregada?.nome}} - Instituto Federal</h1>
 <h3>Conteúdos da disciplina:</h3>
 <ul>
-    <li *ngFor="let conteudo of conteudosDisciplina">{{conteudo.titulo}}</li>
+    <li *ngFor="let conteudo of conteudosDisciplina">
+        <a routerLink=""></a>{{conteudo.titulo}}
+    </li>
 </ul>

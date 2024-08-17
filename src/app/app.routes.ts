@@ -15,4 +15,5 @@ export const routes: Routes = [
     { path: 'quem-somos', component: PaginaQuemSomosComponent },
     { path: 'planos-estudo', component: PaginaPlanosEstudoComponent },
     { path: 'simulados', component: PaginaSimuladosComponent },
+    
 ];

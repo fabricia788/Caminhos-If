@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Disciplina } from '../../../models/disciplina';
 import { ConteudosDisciplina } from '../../../models/conteudos-disciplina';
 import { DisciplinaService } from '../../../services/disciplina.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
+import { ConteudoDisciplinaService } from '../../../services/conteudo-disciplina.service';
 
 @Component({
   selector: 'app-pagina-disciplina',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor, RouterLink],
   templateUrl: './pagina-disciplina.component.html',
   styleUrl: './pagina-disciplina.component.scss'
 })
@@ -17,7 +18,7 @@ export class PaginaDisciplinaComponent implements OnInit{
   disciplinaCarregada!: Disciplina
   conteudosDisciplina!: ConteudosDisciplina[]
 
-  constructor(private disciplina: DisciplinaService, private route: ActivatedRoute){}
+  constructor(private disciplina: DisciplinaService, private conteudos: ConteudoDisciplinaService ,private route: ActivatedRoute){}
 
   ngOnInit(): void {
 
@@ -37,11 +38,9 @@ export class PaginaDisciplinaComponent implements OnInit{
     );
 
     //com o id, chama o metodo que retorna o objetos conteudos da disciplina.
-    this.disciplina.getConteudosPeloIdDisciplina(this.disciplinaId).subscribe(
+    this.conteudos.getConteudosPeloIdDisciplina(this.disciplinaId).subscribe(
       (resposta) => {
-        this.conteudosDisciplina = resposta;
-        console.log(this.conteudosDisciplina);
-        
+        this.conteudosDisciplina = resposta;  
       },
       (erro) => {
         console.error('Erro ao obter dados da API', erro);
