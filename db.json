@@ -1,13 +1,16 @@
 {
-    "posts": [
-      { "id": "1", "title": "a title", "views": 100 },
-      { "id": "2", "title": "another title", "views": 200 }
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1", "postId": "1" }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
-  }
+  "disciplinas": [
+    { "id": 1, "nome": "Matemática"},
+    { "id": 2, "nome": "História"}
+  ],
+  "conteudos": [
+    { "id": 1, "titulo": "Álgebra Linear", "disciplinaId": 1 },
+    { "id": 2, "titulo": "Cálculo Diferencial", "disciplinaId": 1 },
+    { "id": 3, "titulo": "História Antiga", "disciplinaId": 2 }
+  ],
+  "planosEstudo": [
+    { "id": 1, "titulo": "Plano de Estudo para Álgebra", "conteudoId": 1, "horasDuracao": 20 },
+    { "id": 2, "titulo": "Plano de Estudo para Cálculo", "conteudoId": 2, "horasDuracao": 30 },
+    { "id": 3, "titulo": "Plano de Estudo para História Antiga", "conteudoId": 3, "horasDuracao": 15 }
+  ]
+}

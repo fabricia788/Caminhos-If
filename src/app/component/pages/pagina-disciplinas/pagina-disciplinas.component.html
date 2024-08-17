@@ -1,1 +1,3 @@
-<p>pagina-disciplinas works!</p>
+<div *ngFor="let disciplina of disciplinasCarregadas">
+    <a routerLink="/disciplina/{{disciplina.id}}"><h1>{{disciplina.nome}}</h1></a>
+</div>

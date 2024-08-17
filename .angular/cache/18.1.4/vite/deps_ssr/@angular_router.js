@@ -1,14 +1,17 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
+  Title
+} from "./chunk-XS2VNFJ5.js";
+import "./chunk-GINLV7KH.js";
+import {
   DOCUMENT,
   HashLocationStrategy,
   LOCATION_INITIALIZED,
   Location,
   LocationStrategy,
   PathLocationStrategy,
-  Title,
   ViewportScroller
-} from "./chunk-YEYHOZFM.js";
+} from "./chunk-3RPLDWYT.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   APP_INITIALIZER,
@@ -53,7 +56,6 @@ import {
   isStandalone,
   makeEnvironmentProviders,
   reflectComponentType,
-  require_cjs,
   require_operators,
   runInInjectionContext,
   setClassMetadata,
@@ -77,14 +79,17 @@ import {
   ɵɵloadQuery,
   ɵɵqueryRefresh,
   ɵɵsanitizeUrlOrResourceUrl
-} from "./chunk-ADEHXVOU.js";
+} from "./chunk-XWADEN2T.js";
+import {
+  require_cjs
+} from "./chunk-YYUEM3RU.js";
 import {
   __spreadProps,
   __spreadValues,
   __toESM
 } from "./chunk-NQ4HTGF6.js";
 
-// ../node_modules/@angular/router/fesm2022/router.mjs
+// ../../node_modules/@angular/router/fesm2022/router.mjs
 var import_rxjs = __toESM(require_cjs(), 1);
 var import_operators = __toESM(require_operators(), 1);
 var PRIMARY_OUTLET = "primary";
