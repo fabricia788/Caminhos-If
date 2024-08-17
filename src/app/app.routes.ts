@@ -6,6 +6,7 @@ import { PaginaQuemSomosComponent } from './component/pages/pagina-quem-somos/pa
 import { PaginaPlanosEstudoComponent } from './component/pages/pagina-planos-estudo/pagina-planos-estudo.component';
 import { PaginaSimuladosComponent } from './component/pages/pagina-simulados/pagina-simulados.component';
 import { PaginaDisciplinasComponent } from './component/pages/pagina-disciplinas/pagina-disciplinas.component';
+import { PaginaConteudoDisciplinaComponent } from './component/pages/pagina-conteudo-disciplina/pagina-conteudo-disciplina.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -15,5 +16,5 @@ export const routes: Routes = [
     { path: 'quem-somos', component: PaginaQuemSomosComponent },
     { path: 'planos-estudo', component: PaginaPlanosEstudoComponent },
     { path: 'simulados', component: PaginaSimuladosComponent },
-    
+    { path: 'conteudo/:id', component: PaginaConteudoDisciplinaComponent },
 ];
