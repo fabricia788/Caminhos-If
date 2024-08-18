@@ -4,3 +4,19 @@
 * {
     font-family: 'inter', sans-serif;
 }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.flex-row{
+    flex-direction: row;
+}
+.flex-column{
+    flex-direction: column;
+}
+.sem-cor {
+    color: inherit; /* ou 'initial' ou 'unset' */
+    text-decoration: none; /* para remover o sublinhado, se necessário */
+}

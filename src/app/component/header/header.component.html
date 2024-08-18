@@ -1,12 +1,12 @@
 <header>
-    <img routerLink="/home" src="logotipo.png" alt="">
+    <a routerLink="/"><img src="logotipo.png" alt=""></a>
     <nav>
         <a routerLink="/metodologias" href="#">Metodologia</a>
         <a routerLink="/planos-estudo" href="#">Plano de Estudo</a>
         <a routerLink="/quem-somos" href="#">Quem somos</a>
     </nav>
     <div class="botoes">
-        <app-button conteudo="Login"></app-button>
-        <app-button conteudo="Inscreva-se"></app-button>
+        <app-button routerLink="/login" conteudo="Login"></app-button>
+        <app-button routerLink="/cadastro" conteudo="Inscreva-se"></app-button>
     </div>
 </header>
