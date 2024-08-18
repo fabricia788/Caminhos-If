@@ -1,0 +1,14 @@
+<h1>{{conteudoDisciplinaCarregado?.titulo}}</h1>
+<h3>{{conteudoDisciplinaCarregado?.descricao}}</h3>
+
+<ul>
+    <li *ngFor="let subItem of conteudoDisciplinaCarregado?.subtitulos; let i = index">
+        <p>{{subItem.titulo}}</p>
+        <p>{{subItem.descricao}}</p>
+        <h6>Assista ao vídeo sobre {{subItem.titulo}}:</h6>
+        <iframe width="656" height="369" [src]="subItemVideoUrls[i]"
+            title="{{subItem.titulo}} | YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </li>
+</ul>

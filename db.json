@@ -1,0 +1,492 @@
+{
+  "disciplinas": [
+    { "id": 1, "nome": "Matemática" },
+    { "id": 2, "nome": "História" },
+    { "id": 3, "nome": "Física" },
+    { "id": 4, "nome": "Química" },
+    { "id": 5, "nome": "Biologia" },
+    { "id": 6, "nome": "Geografia" },
+    { "id": 7, "nome": "Literatura" },
+    { "id": 8, "nome": "Informática" },
+    { "id": 9, "nome": "Filosofia" },
+    { "id": 10, "nome": "Sociologia" },
+    { "id": 11, "nome": "Educação Física" },
+    { "id": 12, "nome": "Arte" },
+    { "id": 13, "nome": "Economia" },
+    { "id": 14, "nome": "Direito" },
+    { "id": 15, "nome": "Administração" },
+    { "id": 16, "nome": "Engenharia" },
+    { "id": 17, "nome": "Arquitetura" },
+    { "id": 18, "nome": "Astronomia" },
+    { "id": 19, "nome": "Linguística" },
+    { "id": 20, "nome": "Psicologia" }
+  ],
+  "conteudos": [
+    {
+      "id": 1,
+      "titulo": "Álgebra Linear",
+      "disciplinaId": 1,
+      "descricao": "Estudo dos sistemas lineares e matrizes.",
+      "subtitulos": [
+        {
+          "titulo": "Vetores e Espaços Vetoriais",
+          "descricao": "Análise de vetores e dos espaços em que eles residem.",
+          "videoUrl": "https://www.youtube.com/embed/fNk_zzaMoSs"
+        },
+        {
+          "titulo": "Transformações Lineares",
+          "descricao": "Estudo das funções que preservam operações de adição e multiplicação por escalares.",
+          "videoUrl": "https://www.youtube.com/embed/kYB8IZa5AuE"
+        },
+        {
+          "titulo": "Teorema de Cramer",
+          "descricao": "Método para resolver sistemas lineares utilizando determinantes.",
+          "videoUrl": "https://www.youtube.com/embed/Lw5ZQ7_Z7l4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Cálculo Diferencial",
+      "disciplinaId": 1,
+      "descricao": "Análise das taxas de variação e suas aplicações.",
+      "subtitulos": [
+        {
+          "titulo": "Derivadas e Aplicações",
+          "descricao": "Conceito de derivadas e como aplicá-las em problemas práticos.",
+          "videoUrl": "https://www.youtube.com/embed/S0_qX-5-2Gk"
+        },
+        {
+          "titulo": "Teorema Fundamental do Cálculo",
+          "descricao": "Relacionamento entre a integração e a diferenciação.",
+          "videoUrl": "https://www.youtube.com/embed/4XJQ-2w9_6A"
+        },
+        {
+          "titulo": "Integração",
+          "descricao": "Técnicas para encontrar a área sob curvas e resolver problemas relacionados.",
+          "videoUrl": "https://www.youtube.com/embed/rfG8ce4t-H4"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "História Antiga",
+      "disciplinaId": 2,
+      "descricao": "Estudo das civilizações antigas e suas contribuições.",
+      "subtitulos": [
+        {
+          "titulo": "Egito e Mesopotâmia",
+          "descricao": "Análise das primeiras civilizações do Egito e da Mesopotâmia.",
+          "videoUrl": "https://www.youtube.com/embed/x-V9lZ-yR2Q"
+        },
+        {
+          "titulo": "Grécia Antiga",
+          "descricao": "Exploração da cultura, política e filosofia da Grécia antiga.",
+          "videoUrl": "https://www.youtube.com/embed/Xz8h6D48s3Q"
+        },
+        {
+          "titulo": "Roma Antiga",
+          "descricao": "História do Império Romano e suas influências duradouras.",
+          "videoUrl": "https://www.youtube.com/embed/qC7L44m_22U"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "História Moderna",
+      "disciplinaId": 2,
+      "descricao": "Análise dos eventos que moldaram o mundo moderno.",
+      "subtitulos": [
+        {
+          "titulo": "Renascimento",
+          "descricao": "Exploração do período de renovação cultural e artística na Europa.",
+          "videoUrl": "https://www.youtube.com/embed/J_747V9P1u0"
+        },
+        {
+          "titulo": "Revolução Científica",
+          "descricao": "Mudanças fundamentais na forma como o conhecimento científico foi adquirido e aplicado.",
+          "videoUrl": "https://www.youtube.com/embed/v5Yk_k9bZ08"
+        },
+        {
+          "titulo": "Revolução Industrial",
+          "descricao": "Impactos da revolução tecnológica e industrial sobre a sociedade e a economia.",
+          "videoUrl": "https://www.youtube.com/embed/7yX52h2r6Z8"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "História Contemporânea",
+      "disciplinaId": 2,
+      "descricao": "Exame dos eventos e tendências dos últimos dois séculos.",
+      "subtitulos": [
+        {
+          "titulo": "Primeira Guerra Mundial",
+          "descricao": "Análise das causas e consequências da Primeira Guerra Mundial.",
+          "videoUrl": "https://www.youtube.com/embed/v01p-61d6gI"
+        },
+        {
+          "titulo": "Segunda Guerra Mundial",
+          "descricao": "Estudo dos eventos que levaram e decorreram da Segunda Guerra Mundial.",
+          "videoUrl": "https://www.youtube.com/embed/mF_90kQ2z_Y"
+        },
+        {
+          "titulo": "Guerra Fria",
+          "descricao": "Exame do conflito ideológico e político entre os blocos ocidental e oriental.",
+          "videoUrl": "https://www.youtube.com/embed/c5Yz9_H7B2g"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Mecânica Clássica",
+      "disciplinaId": 3,
+      "descricao": "Análise dos movimentos e forças sobre os corpos.",
+      "subtitulos": [
+        {
+          "titulo": "Leis de Newton",
+          "descricao": "Estudo das três leis fundamentais que descrevem o movimento dos corpos.",
+          "videoUrl": "https://www.youtube.com/embed/X9m_Y4q2e2w"
+        },
+        {
+          "titulo": "Dinâmica de Partículas",
+          "descricao": "Análise das forças e movimentos de partículas individuais.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Movimento Harmônico Simples",
+          "descricao": "Estudo do movimento oscilatório e suas propriedades.",
+          "videoUrl": "https://www.youtube.com/embed/W3h6oQ42_O4"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Termodinâmica",
+      "disciplinaId": 3,
+      "descricao": "Estudo das relações entre calor e trabalho.",
+      "subtitulos": [
+        {
+          "titulo": "Primeira Lei da Termodinâmica",
+          "descricao": "Princípio da conservação de energia para sistemas termodinâmicos.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Segunda Lei da Termodinâmica",
+          "descricao": "Conceito de entropia e a direção dos processos naturais.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Ciclos Termodinâmicos",
+          "descricao": "Análise dos ciclos que convertem energia térmica em trabalho.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Química Orgânica",
+      "disciplinaId": 4,
+      "descricao": "Estudo dos compostos de carbono e suas reações.",
+      "subtitulos": [
+        {
+          "titulo": "Hidrocarbonetos",
+          "descricao": "Estudo dos compostos formados apenas por carbono e hidrogênio.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Reações Orgânicas",
+          "descricao": "Análise dos diferentes tipos de reações que ocorrem em compostos orgânicos.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Ácidos e Bases Orgânicos",
+          "descricao": "Estudo das propriedades ácidas e básicas dos compostos orgânicos.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Biologia Celular",
+      "disciplinaId": 5,
+      "descricao": "Estudo da estrutura e função das células.",
+      "subtitulos": [
+        {
+          "titulo": "Estrutura da Célula",
+          "descricao": "Análise dos componentes e organelas das células e suas funções.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Divisão Celular",
+          "descricao": "Estudo dos processos de mitose e meiose.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Metabolismo Celular",
+          "descricao": "Exploração das reações químicas que ocorrem dentro das células.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Genética",
+      "disciplinaId": 5,
+      "descricao": "Estudo da hereditariedade e da variação genética.",
+      "subtitulos": [
+        {
+          "titulo": "Estrutura do DNA",
+          "descricao": "Análise da estrutura molecular do DNA e seu papel na hereditariedade.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Genética Mendeliana",
+          "descricao": "Estudo dos princípios de herança descritos por Gregor Mendel.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Genética Molecular",
+          "descricao": "Exploração dos mecanismos moleculares da expressão genética.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titulo": "Geografia Física",
+      "disciplinaId": 6,
+      "descricao": "Análise das características físicas da Terra.",
+      "subtitulos": [
+        {
+          "titulo": "Geomorfologia",
+          "descricao": "Estudo das formas da superfície terrestre e seus processos de formação.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Climatologia",
+          "descricao": "Análise dos padrões climáticos e suas variações.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Hidrologia",
+          "descricao": "Estudo da água na Terra, incluindo rios, lagos e oceanos.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titulo": "Geografia Humana",
+      "disciplinaId": 6,
+      "descricao": "Estudo das atividades humanas e seu impacto no ambiente.",
+      "subtitulos": [
+        {
+          "titulo": "População e Urbanização",
+          "descricao": "Análise do crescimento populacional e desenvolvimento das cidades.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Economia e Recursos Naturais",
+          "descricao": "Estudo da utilização dos recursos naturais e seu impacto econômico.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Cultura e Sociedade",
+          "descricao": "Exploração das influências culturais e sociais nas comunidades humanas.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titulo": "Poesia Brasileira",
+      "disciplinaId": 7,
+      "descricao": "Estudo da poesia produzida no Brasil.",
+      "subtitulos": [
+        {
+          "titulo": "Poesia Modernista",
+          "descricao": "Análise dos poetas e movimentos do Modernismo no Brasil.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Poesia Contemporânea",
+          "descricao": "Exploração dos poetas e estilos da poesia brasileira contemporânea.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Poetas Brasileiros",
+          "descricao": "Estudo das obras e contribuições dos principais poetas brasileiros.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titulo": "Prosa Brasileira",
+      "disciplinaId": 7,
+      "descricao": "Análise da prosa brasileira desde o período colonial até hoje.",
+      "subtitulos": [
+        {
+          "titulo": "Romance Brasileiro",
+          "descricao": "Exploração do desenvolvimento do romance no Brasil.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Conto Brasileiro",
+          "descricao": "Análise dos contos e suas características na literatura brasileira.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Literatura Infantojuvenil",
+          "descricao": "Estudo da literatura voltada para o público infantojuvenil no Brasil.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titulo": "Programação em Java",
+      "disciplinaId": 8,
+      "descricao": "Introdução à programação utilizando a linguagem Java.",
+      "subtitulos": [
+        {
+          "titulo": "Fundamentos do Java",
+          "descricao": "Conceitos básicos e sintaxe da linguagem Java.",
+          "videoUrl": "https://www.youtube.com/embed/eIrMbA8_C0Q"
+        },
+        {
+          "titulo": "Orientação a Objetos",
+          "descricao": "Princípios de programação orientada a objetos em Java.",
+          "videoUrl": "https://www.youtube.com/embed/v-fC49v-CWo"
+        },
+        {
+          "titulo": "Desenvolvimento de Aplicações",
+          "descricao": "Criação e gerenciamento de aplicações Java.",
+          "videoUrl": "https://www.youtube.com/embed/grEKMH-z30Q"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titulo": "Desenvolvimento Web",
+      "disciplinaId": 8,
+      "descricao": "Desenvolvimento de websites e aplicações web.",
+      "subtitulos": [
+        {
+          "titulo": "HTML e CSS",
+          "descricao": "Fundamentos da criação de páginas web com HTML e CSS.",
+          "videoUrl": "https://www.youtube.com/embed/pQN-pnXPaVg"
+        },
+        {
+          "titulo": "JavaScript",
+          "descricao": "Programação interativa e dinâmica com JavaScript.",
+          "videoUrl": "https://www.youtube.com/embed/PkZNo7MFNFg"
+        },
+        {
+          "titulo": "Frameworks de Desenvolvimento",
+          "descricao": "Uso de frameworks para acelerar o desenvolvimento web.",
+          "videoUrl": "https://www.youtube.com/embed/w3jL_mZ2pEg"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titulo": "Ética e Filosofia",
+      "disciplinaId": 9,
+      "descricao": "Estudo dos princípios éticos e suas bases filosóficas.",
+      "subtitulos": [
+        {
+          "titulo": "Teorias Éticas",
+          "descricao": "Principais teorias que orientam a conduta ética.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Filosofia Moral",
+          "descricao": "Exploração dos fundamentos da moralidade e ética.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Ética Aplicada",
+          "descricao": "Análise de dilemas éticos em contextos práticos.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titulo": "Filosofia Moderna",
+      "disciplinaId": 9,
+      "descricao": "Exame dos principais filósofos e correntes da modernidade.",
+      "subtitulos": [
+        {
+          "titulo": "Racionalismo",
+          "descricao": "Estudo da corrente filosófica que enfatiza a razão como fonte de conhecimento.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Empirismo",
+          "descricao": "Exploração da filosofia que valoriza a experiência sensorial como base do conhecimento.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Idealismo",
+          "descricao": "Análise da corrente que considera a realidade como uma construção mental.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titulo": "Sociologia Geral",
+      "disciplinaId": 10,
+      "descricao": "Estudo dos princípios e teorias sociológicas fundamentais.",
+      "subtitulos": [
+        {
+          "titulo": "Teorias Sociológicas",
+          "descricao": "Análise das principais teorias que explicam a estrutura e funcionamento da sociedade.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Instituições Sociais",
+          "descricao": "Exploração das principais instituições e seu papel na sociedade.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Mudança Social",
+          "descricao": "Estudo dos processos e fatores que promovem mudanças nas sociedades.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titulo": "Sociologia da Família",
+      "disciplinaId": 10,
+      "descricao": "Análise das estruturas e dinâmicas familiares na sociedade.",
+      "subtitulos": [
+        {
+          "titulo": "Estruturas Familiares",
+          "descricao": "Exploração das diferentes formas e estruturas familiares.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Papéis e Funções",
+          "descricao": "Análise dos papéis e funções que os membros da família desempenham.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Mudanças e Tendências",
+          "descricao": "Estudo das mudanças e tendências nas estruturas e dinâmicas familiares.",
+          "videoUrl": "https://www.youtube.com/embed/S_d87n2q4yY"
+        }
+      ]
+    }
+  ],
+  "planosEstudo": [
+    { "id": 1, "titulo": "Plano de Estudo para Álgebra", "conteudoId": 1, "horasDuracao": 20 },
+    { "id": 2, "titulo": "Plano de Estudo para Cálculo", "conteudoId": 2, "horasDuracao": 30 },
+    { "id": 3, "titulo": "Plano de Estudo para História Antiga", "conteudoId": 3, "horasDuracao": 15 },
+    { "id": 4, "titulo": "Plano de Estudo para História Moderna", "conteudoId": 4, "horasDuracao": 25 }
+  ]
+}
