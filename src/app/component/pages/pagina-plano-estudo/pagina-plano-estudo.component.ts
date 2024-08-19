@@ -39,7 +39,8 @@ export class PaginaPlanoEstudoComponent {
           (resposta) => {
             console.log(this.planoEstudoCarregado.conteudosId);
             this.conteudosPlanoEstudo = resposta;
-
+            console.log(this.conteudosPlanoEstudo);
+            
           },
           (erro) => {
             console.error('Erro ao obter dados da API', erro);
