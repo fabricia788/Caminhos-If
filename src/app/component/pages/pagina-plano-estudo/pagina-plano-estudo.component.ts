@@ -5,6 +5,7 @@ import { PlanoEstudoService } from '../../../services/plano-estudo.service';
 import { ConteudoDisciplinaService } from '../../../services/conteudo-disciplina.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-pagina-plano-estudo',
@@ -17,11 +18,12 @@ export class PaginaPlanoEstudoComponent {
   planoEstudoId: number = 0;
   planoEstudoCarregado!: PlanoEstudo;
   conteudosPlanoEstudo!: ConteudosDisciplina[];
-
+  subItemVideoUrls: SafeResourceUrl[] = []
+  
   constructor(
     private planoEstudo: PlanoEstudoService,
     private conteudos: ConteudoDisciplinaService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute, private sanitizer: DomSanitizer
   ) { }
 
   ngOnInit(): void {
@@ -34,13 +36,15 @@ export class PaginaPlanoEstudoComponent {
     this.planoEstudo.getPlanoEstudoPeloId(this.planoEstudoId).subscribe(
       (resposta) => {
         this.planoEstudoCarregado = resposta;
-        
+        this.subItemVideoUrls = resposta.subtitulos.map(subtitulo =>
+          this.sanitizer.bypassSecurityTrustResourceUrl(
+            subtitulo.videoUrl!
+          )
+        );
         this.conteudos.getConteudosPeloId(this.planoEstudoCarregado.conteudosId).subscribe(  
           (resposta) => {
-            console.log(this.planoEstudoCarregado.conteudosId);
             this.conteudosPlanoEstudo = resposta;
-            console.log(this.conteudosPlanoEstudo);
-            
+
           },
           (erro) => {
             console.error('Erro ao obter dados da API', erro);
