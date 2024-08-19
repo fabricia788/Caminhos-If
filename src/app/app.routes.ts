@@ -9,6 +9,7 @@ import { PaginaDisciplinasComponent } from './component/pages/pagina-disciplinas
 import { PaginaConteudoDisciplinaComponent } from './component/pages/pagina-conteudo-disciplina/pagina-conteudo-disciplina.component';
 import { PaginaLoginComponent } from './component/pages/pagina-login/pagina-login.component';
 import { PaginaCadastroComponent } from './component/pages/pagina-cadastro/pagina-cadastro.component';
+import { PaginaPlanoEstudoComponent } from './component/pages/pagina-plano-estudo/pagina-plano-estudo.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -21,5 +22,6 @@ export const routes: Routes = [
     { path: 'conteudo/:id', component: PaginaConteudoDisciplinaComponent },
     { path: 'login', component: PaginaLoginComponent },
     { path: 'cadastro', component: PaginaCadastroComponent },
+    { path: 'plano-estudo/:id', component: PaginaPlanoEstudoComponent },
 
 ];

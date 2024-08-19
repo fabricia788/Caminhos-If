@@ -1,25 +1,85 @@
 {
   "disciplinas": [
-    { "id": 1, "nome": "Matemática" },
-    { "id": 2, "nome": "História" },
-    { "id": 3, "nome": "Física" },
-    { "id": 4, "nome": "Química" },
-    { "id": 5, "nome": "Biologia" },
-    { "id": 6, "nome": "Geografia" },
-    { "id": 7, "nome": "Literatura" },
-    { "id": 8, "nome": "Informática" },
-    { "id": 9, "nome": "Filosofia" },
-    { "id": 10, "nome": "Sociologia" },
-    { "id": 11, "nome": "Educação Física" },
-    { "id": 12, "nome": "Arte" },
-    { "id": 13, "nome": "Economia" },
-    { "id": 14, "nome": "Direito" },
-    { "id": 15, "nome": "Administração" },
-    { "id": 16, "nome": "Engenharia" },
-    { "id": 17, "nome": "Arquitetura" },
-    { "id": 18, "nome": "Astronomia" },
-    { "id": 19, "nome": "Linguística" },
-    { "id": 20, "nome": "Psicologia" }
+    {
+      "id": 1,
+      "nome": "Matemática"
+    },
+    {
+      "id": 2,
+      "nome": "História"
+    },
+    {
+      "id": 3,
+      "nome": "Física"
+    },
+    {
+      "id": 4,
+      "nome": "Química"
+    },
+    {
+      "id": 5,
+      "nome": "Biologia"
+    },
+    {
+      "id": 6,
+      "nome": "Geografia"
+    },
+    {
+      "id": 7,
+      "nome": "Literatura"
+    },
+    {
+      "id": 8,
+      "nome": "Informática"
+    },
+    {
+      "id": 9,
+      "nome": "Filosofia"
+    },
+    {
+      "id": 10,
+      "nome": "Sociologia"
+    },
+    {
+      "id": 11,
+      "nome": "Educação Física"
+    },
+    {
+      "id": 12,
+      "nome": "Arte"
+    },
+    {
+      "id": 13,
+      "nome": "Economia"
+    },
+    {
+      "id": 14,
+      "nome": "Direito"
+    },
+    {
+      "id": 15,
+      "nome": "Administração"
+    },
+    {
+      "id": 16,
+      "nome": "Engenharia"
+    },
+    {
+      "id": 17,
+      "nome": "Arquitetura"
+    },
+    {
+      "id": 18,
+      "nome": "Astronomia"
+    },
+    {
+      "id": 19,
+      "nome": "Linguística"
+    },
+    {
+      "id": 20,
+      "nome": "Psicologia"
+    }
   ],
   "conteudos": [
     {
@@ -484,9 +544,117 @@
     }
   ],
   "planosEstudo": [
-    { "id": 1, "titulo": "Plano de Estudo para Álgebra", "conteudoId": 1, "horasDuracao": 20 },
-    { "id": 2, "titulo": "Plano de Estudo para Cálculo", "conteudoId": 2, "horasDuracao": 30 },
-    { "id": 3, "titulo": "Plano de Estudo para História Antiga", "conteudoId": 3, "horasDuracao": 15 },
-    { "id": 4, "titulo": "Plano de Estudo para História Moderna", "conteudoId": 4, "horasDuracao": 25 }
+    {
+      "id": 1,
+      "titulo": "Exploradores do Conhecimento 🧭",
+      "descricao": "Uma jornada multidisciplinar pelos conceitos mais fundamentais.",
+      "conteudosId": [
+        1,
+        3,
+        6
+      ],
+      "horasDuracao": 45,
+      "subtitulos": [
+        {
+          "titulo": "Vetores e Espaços Vetoriais",
+          "descricao": "Análise de vetores e dos espaços em que eles residem.",
+          "videoUrl": "https://www.youtube.com/embed/fNk_zzaMoSs"
+        },
+        {
+          "titulo": "Egito e Mesopotâmia",
+          "descricao": "Análise das primeiras civilizações do Egito e da Mesopotâmia.",
+          "videoUrl": "https://www.youtube.com/embed/x-V9lZ-yR2Q"
+        },
+        {
+          "titulo": "Leis de Newton",
+          "descricao": "Estudo das três leis fundamentais que descrevem o movimento dos corpos.",
+          "videoUrl": "https://www.youtube.com/embed/X9m_Y4q2e2w"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "O Universo e Eu 🌌",
+      "descricao": "Compreenda as leis da natureza e os mistérios da existência.",
+      "conteudosId": [
+        2,
+        5,
+        7
+      ],
+      "horasDuracao": 50,
+      "subtitulos": [
+        {
+          "titulo": "Derivadas e Aplicações",
+          "descricao": "Conceito de derivadas e como aplicá-las em problemas práticos.",
+          "videoUrl": "https://www.youtube.com/embed/S0_qX-5-2Gk"
+        },
+        {
+          "titulo": "Segunda Guerra Mundial",
+          "descricao": "Estudo dos eventos que levaram e decorreram da Segunda Guerra Mundial.",
+          "videoUrl": "https://www.youtube.com/embed/mF_90kQ2z_Y"
+        },
+        {
+          "titulo": "Segunda Lei da Termodinâmica",
+          "descricao": "Conceito de entropia e a direção dos processos naturais.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Inventores e Descobridores 🛠️",
+      "descricao": "Explore a mente humana e as maravilhas do nosso mundo.",
+      "conteudosId": [
+        4,
+        8,
+        10
+      ],
+      "horasDuracao": 40,
+      "subtitulos": [
+        {
+          "titulo": "Renascimento",
+          "descricao": "Exploração do período de renovação cultural e artística na Europa.",
+          "videoUrl": "https://www.youtube.com/embed/J_747V9P1u0"
+        },
+        {
+          "titulo": "Reações Orgânicas",
+          "descricao": "Análise dos diferentes tipos de reações que ocorrem em compostos orgânicos.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        },
+        {
+          "titulo": "Genética Mendeliana",
+          "descricao": "Estudo dos princípios de herança descritos por Gregor Mendel.",
+          "videoUrl": "https://www.youtube.com/embed/m3Y5463-sE4"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Harmonia do Conhecimento 🎓",
+      "descricao": "Encontre a beleza nas interações entre diferentes campos do saber.",
+      "conteudosId": [
+        9,
+        12,
+        14
+      ],
+      "horasDuracao": 55,
+      "subtitulos": [
+        {
+          "titulo": "Estrutura da Célula",
+          "descricao": "Análise dos componentes e organelas das células e suas funções.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "População e Urbanização",
+          "descricao": "Análise do crescimento populacional e desenvolvimento das cidades.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        },
+        {
+          "titulo": "Romance Brasileiro",
+          "descricao": "Exploração do desenvolvimento do romance no Brasil.",
+          "videoUrl": "https://www.youtube.com/embed/f9t281f22wM"
+        }
+      ]
+    }
   ]
 }

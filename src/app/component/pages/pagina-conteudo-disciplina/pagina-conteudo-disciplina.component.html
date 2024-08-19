@@ -7,7 +7,7 @@
             <p>{{subItem.titulo}}</p>
             <p>{{subItem.descricao}}</p>
 
-            <div *ngIf="subItem.videoUrl.trim() !== ''">
+            <div *ngIf="subItem.videoUrl">
                 <h6>Assista ao vídeo sobre {{subItem.titulo}}:</h6>
                 <iframe width="656" height="369" [src]="subItemVideoUrls[i]"
                     title="{{subItem.titulo}} | YouTube video player" frameborder="0"

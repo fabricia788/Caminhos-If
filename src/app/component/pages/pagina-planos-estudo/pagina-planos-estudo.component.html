@@ -1,1 +1,7 @@
-<p>pagina-planos-estudo works!</p>
+<div class="container flex-column">
+    <div *ngFor="let plano of planosEstudosCarregados">
+        <a class="sem-cor" routerLink="/plano-estudo/{{plano.id}}">
+            <h1>{{plano.titulo}}</h1>
+        </a>
+    </div>
+</div>

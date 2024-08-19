@@ -1,0 +1,9 @@
+<div class="container flex-column">
+    <h1>{{planoEstudoCarregado?.titulo}}</h1>
+    <h3>Conteúdos do plano:</h3>
+    <ul>
+        <li *ngFor="let conteudo of conteudosPlanoEstudo">
+            <a class="sem-cor" routerLink="/conteudo/{{conteudo.id}}"><p>{{conteudo.titulo}}</p></a>
+        </li>
+    </ul>
+</div>

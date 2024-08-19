@@ -32,7 +32,7 @@ export class PaginaConteudoDisciplinaComponent implements OnInit {
         this.conteudoDisciplinaCarregado = resposta;
         this.subItemVideoUrls = resposta.subtitulos.map(subtitulo =>
           this.sanitizer.bypassSecurityTrustResourceUrl(
-            subtitulo.videoUrl
+            subtitulo.videoUrl!
           )
         );
       },
