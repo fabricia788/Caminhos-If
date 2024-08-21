@@ -10,6 +10,7 @@ import { PaginaConteudoDisciplinaComponent } from './component/pages/pagina-cont
 import { PaginaLoginComponent } from './component/pages/pagina-login/pagina-login.component';
 import { PaginaCadastroComponent } from './component/pages/pagina-cadastro/pagina-cadastro.component';
 import { PaginaPlanoEstudoComponent } from './component/pages/pagina-plano-estudo/pagina-plano-estudo.component';
+import { PaginaSimuladoComponent } from './component/pages/pagina-simulado/pagina-simulado.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -23,5 +24,6 @@ export const routes: Routes = [
     { path: 'login', component: PaginaLoginComponent },
     { path: 'cadastro', component: PaginaCadastroComponent },
     { path: 'plano-estudo/:id', component: PaginaPlanoEstudoComponent },
+    { path: 'simulado/:id', component: PaginaSimuladoComponent },
 
 ];
