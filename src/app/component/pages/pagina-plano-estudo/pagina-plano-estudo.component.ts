@@ -6,6 +6,7 @@ import { ConteudoDisciplinaService } from '../../../services/conteudo-disciplina
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { NgFor } from '@angular/common';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Disciplina } from '../../../models/disciplina';
 
 @Component({
   selector: 'app-pagina-plano-estudo',
@@ -18,7 +19,8 @@ export class PaginaPlanoEstudoComponent {
   planoEstudoId: number = 0;
   planoEstudoCarregado!: PlanoEstudo;
   conteudosPlanoEstudo!: ConteudosDisciplina[];
-  subItemVideoUrls: SafeResourceUrl[] = []
+  subItemVideoUrls: SafeResourceUrl[] = [];
+  disciplinas!: Disciplina[];
   
   constructor(
     private planoEstudo: PlanoEstudoService,
@@ -36,6 +38,7 @@ export class PaginaPlanoEstudoComponent {
     this.planoEstudo.getPlanoEstudoPeloId(this.planoEstudoId).subscribe(
       (resposta) => {
         this.planoEstudoCarregado = resposta;
+        console.log(this.planoEstudoCarregado);
         this.subItemVideoUrls = resposta.subtitulos.map(subtitulo =>
           this.sanitizer.bypassSecurityTrustResourceUrl(
             subtitulo.videoUrl!
@@ -56,6 +59,8 @@ export class PaginaPlanoEstudoComponent {
       }
     );
 
+    this.planoEstudo.getDisciplinasPorIds(this.planoEstudoCarregado.disciplinasId!).subscribe((x) =>{
+      this.disciplinas = x; console.log(this.disciplinas)} );
     //com o id, chama o metodo que retorna o objetos conteudos da disciplina.
 
   }

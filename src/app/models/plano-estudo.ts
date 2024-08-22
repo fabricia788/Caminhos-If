@@ -7,5 +7,6 @@ export class PlanoEstudo {
     descricao!: string
     subtitulos!: Subtitulos[]
     conteudosId!: number[]
-    horasDuracao!:number
+    horasDuracao!:number;
+    disciplinasId?:number[];
 }

@@ -19,8 +19,8 @@
     </ul>
     <h3>Conteúdos do plano:</h3>
     <ul>
-        <li *ngFor="let conteudo of conteudosPlanoEstudo">
-            <a class="sem-cor" routerLink="/conteudo/{{conteudo.id}}"><p>{{conteudo.titulo}}</p></a>
+        <li *ngFor="let disciplina of disciplinas">
+            <a class="sem-cor" routerLink="/disciplina/{{disciplina.id}}"><p>{{disciplina.nome}}</p></a>
         </li>
     </ul>
 </div>
