@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/cadastro",
+    "/disciplinas",
+    "/login",
+    "/metodologias",
+    "/planos-estudo",
+    "/quem-somos",
+    "/simulados"
+  ]
+}
